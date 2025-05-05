@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install Python 3 and pip
-sudo yum install python3 python3-pip -y
+sudo apt install python3 python3-pip wget -y
 
 # Install required Python packages
 pip3 install cloudscraper requests pysocks scapy icmplib
