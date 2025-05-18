@@ -1,16 +1,16 @@
 #!/bin/bash
 
-# Install Python 3 and pip
-sudo apt install python3 python3-pip wget -y
+sudo apt update
+sudo apt install python3 python3-pip python3-venv wget -y
 
-# Install required Python packages
-pip3 install cloudscraper requests pysocks scapy icmplib
+python3 -m venv venv
+source venv/bin/activate
 
-# Download the Python script
+pip install --upgrade pip
+pip install cloudscraper requests pysocks scapy icmplib
+
 wget https://raw.githubusercontent.com/Peppe12367/sdas/refs/heads/main/bot.py
 
-# Make it executable (optional for Python scripts)
 chmod +x bot.py
 
-# Run the script
-python3 bot.py
+python bot.py
